@@ -1,0 +1,45 @@
+/* Tablet */
+
+@media (max-width: 992px){
+
+}
+
+/* Mobile */
+
+@media (max-width: 768px){
+
+}
+@media (max-width: 768px) {
+    .service-box {
+        padding: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .resume-section {
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .progress {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .portfolio-overlay h4 {
+        font-size: 16px;
+    }
+
+    .portfolio-overlay p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px) {
+    .contact-section .btn-custom {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .footer-section .social-icons {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafza Noor</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header id="header" class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+
+        <!-- Brand (left) -->
+        <div class="d-flex align-items-center me-auto">
+          <a class="navbar-brand" href="#">Hafza</a>
+        </div>
+
+        <!-- Toggler for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links (center) + Social Icons (right) -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <!-- Center: Navigation Links -->
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">What I Do</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <!-- Right: Social Icons -->
+          <ul class="navbar-nav ms-auto d-flex align-items-center">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/profile.php?id=61580635747809"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="nav-item">
+  <a class="nav-link" href="https://github.com/Hafza-Noor" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+</li>
+            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/hafza-noor-a40ab1236/"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="overlay"></div>
+
+    <div class="container text-center text-white">
+  
+  <p class="welcome-text">Welcome</p>
+
+ <h1>I'm <span id="typed"></span></h1>
+
+  <a href="#contact" class="btn-custom mt-6">Hire Me</a>
+
+</div>
+
+    <div class="scroll-down">
+      <i class="fas fa-angle-down"></i>
+    </div>
+   
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>About Me</h2>
+        <p class="section-subtitle">Know Me More</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-7">
+          <h3>Hello, I'm <span class="text-primary">Hafza Noor</span></h3>
+          <p>
+I am a data science student with a background in computational mathematics. I work with real datasets, focusing on data analysis and machine learning.          </p>
+          <p>
+            My work involves data cleaning, feature engineering, and model evaluation. I aim to build reliable models grounded in mathematical understanding.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <ul class="about-info">
+            <li><strong>Name:</strong> Hafza Noor</li>
+            <li><strong>Email:</strong> hafzanoor3106@gmail.com</li>
+            <!-- <li><strong>Age:</strong> 28</li> -->
+            <li><strong>From:</strong> Punjab, Pakistan</li>
+          </ul>
+          <a href="images/resume/resume.pdf" target="_blank" class="btn-custom mt-3">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>What I Do</h2>
+        <p class="section-subtitle">How I can help your next project</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="service-box">
+            <i class="fas fa-brain service-icon"></i>
+            <h4>Machine Learning Modeling</h4>
+            <p>Building regression and classification models with proper validation and tuning.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="service-box">
+           <i class="fas fa-chart-line service-icon"></i>
+            <h4>Data Analysis & EDA</h4>
+            <p>Exploring datasets, identifying patterns, and preparing data for modeling.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="service-box">
+            <i class="fas fa-filter service-icon"></i>
+            <h4>Data Cleaning & Feature Engineering</h4>
+            <p>Handling missing data, outliers, and creating meaningful features from raw data.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="service-box">
+            <i class="fas fa-check-circle service-icon"></i>
+            <h4>Model Evaluation & Validation</h4>
+            <p>Applying cross-validation and performance metrics to ensure reliable models.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="service-box">
+            <i class="fas fa-chart-bar service-icon"></i>
+            <h4>Data Visualization & Dashboards</h4>
+            <p>Communicating insights using visualizations and tools like Power BI.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="service-box">
+          <!--   <i class="fas fa-pencil-ruler"></i>   -->
+            <h4>                                 </h4>
+            <p>                                                                   </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME SECTION -->
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Resume</h2>
+        <p class="section-subtitle">A summary of my Resume</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="mb-4">My Education</h3>
+          <div class="resume-box">
+            <span>2021 - 2025</span>
+            <h4>Bachelor Degree </h4>
+            <p class="text-muted">Bahauddin Zakaria university</p>
+            <p>Graduated in Computational Mathematics.Strong background in mathematical modeling, probability, and statistical analysis.</p>
+          </div>
+          <div class="resume-box">
+            <span>2025 - Continue</span>
+            <h4>Master Degree</h4>
+            <p class="text-muted">Bahauddin Zakaria university</p>
+            <p></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="mb-4">My Experience</h3>
+          <div class="resume-box">
+            <span>2024 - present</span>
+            <h4>Freelance data analyst</h4>
+            <p class="text-muted">  </p>
+            <p>Handling data cleaning, analysis, and visualization to support data-driven decision making.</p>
+          </div>
+         <!-- <div class="resume-box">
+            <span></span>
+            <h4> </h4>
+            <p class="text-muted"></p>
+            <p></p>
+          </div>-->
+        </div>
+      </div>
+
+  <!-- PORTFOLIO SECTION -->
+<section id="portfolio" class="portfolio-section">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="text-center mb-5">
+      <h2>Portfolio</h2>
+      <p class="section-subtitle">Some of my recent work</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <video src="videos/project1.mp4" muted autoplay loop></video>
+          <div class="portfolio-overlay">
+            <h4>Data Analysis Project</h4>
+            <p>Python & Pandas</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <video src="videos/project2.mp4" muted autoplay loop></video>
+          <div class="portfolio-overlay">
+            <h4>Dashboard</h4>
+            <p>Power BI</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <video src="videos/project3.mp4" muted autoplay loop></video>
+          <div class="portfolio-overlay">
+            <h4>Machine Learning Model</h4>
+            <p>Scikit-learn</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <video src="videos/project4.mp4" muted autoplay loop></video>
+          <div class="portfolio-overlay">
+            <h4>Visualization</h4>
+            <p>Matplotlib</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <video src="videos/project5.mp4" muted autoplay loop></video>
+          <div class="portfolio-overlay">
+            <h4>Sales Dashboard</h4>
+            <p>Excel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <video src="videos/project6.mp4" muted autoplay loop></video>
+          <div class="portfolio-overlay">
+            <h4>Dynamic dashboard</h4>
+            <p>Excel</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Contact Me</h2>
+        <p class="section-subtitle">Get in touch with me</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form id="contact-form" action="https://formspree.io/f/maqpaknk" method="POST" onsubmit="return false;">
+
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+    </div>
+    <div class="col-md-6">
+      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+  </div>
+
+  <div class="mb-3">
+    <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+  </div>
+
+  <div class="text-center">
+    <button type="submit" class="btn-custom" id="submit-btn">Send Message</button>
+  </div>
+
+  <!-- Message -->
+  <p id="form-status" style="display:none; color:#20c997; margin-top:10px;"></p>
+
+</form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer id="footer" class="footer-section">
+    <div class="container text-center">
+      <p>&copy; 2026 Hafza Noor. All Rights Reserved.</p>
+      <ul class="social-icons list-unstyled d-flex justify-content-center mt-3">
+        <li><a href="https://www.facebook.com/profile.php?id=61580635747809"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://github.com/Hafza-Noor"><i class="fab fa-github"></i>  </a>
+</li>
+        <li><a href="https://www.linkedin.com/in/hafza-noor-a40ab1236/"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>  <script>
+  </script>
+<script src="js/script.js"></script>
+</body>
+</html>

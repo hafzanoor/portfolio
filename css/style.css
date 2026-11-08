@@ -651,11 +651,129 @@ body {
     margin-bottom: 6px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .research-stats {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
+    .research-stats div {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
     #hero h1 {
         font-size: 34px;
     }
+}
+
+/* =========================
+   CHIPS, PROJECT CARDS, TALKS (added Nov 2026)
+========================= */
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 12px 0;
+}
+
+.chips span {
+    background: #eef9f5;
+    color: #138a68;
+    border: 1px solid #c8eee1;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.research-list {
+    padding-left: 18px;
+    margin-bottom: 0;
+}
+
+.research-list li {
+    margin-bottom: 4px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.project-card video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    background: #111;
+}
+
+.project-body {
+    padding: 18px 20px 20px;
+}
+
+.project-body h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.project-body p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.talks-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.talks-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.talk-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 18px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.talk-item:last-child {
+    border-bottom: none;
+}
+
+.talk-year {
+    background: #20c997;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.talk-item h5 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.talk-item p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
 }

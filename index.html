@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hafza Noor | Medical AI &amp; Data Science</title>
-  <meta name="description" content="Hafza Noor – mathematics graduate and master's student at Bahauddin Zakariya University researching explainable deep learning for brain tumor MRI classification and 3D segmentation.">
+  <title>Hafza Noor | Computer Vision &amp; Trustworthy AI</title>
+  <meta name="description" content="Hafza Noor – researcher in computer vision, trustworthy AI and optimization at Bahauddin Zakariya University, with work on explainable brain tumor MRI classification and 3D segmentation.">
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.png" type="image/png">
@@ -75,7 +75,7 @@
     <div class="container text-center text-white">
       <p class="welcome-text">Welcome</p>
       <h1>I'm <span id="typed"></span></h1>
-      <p class="hero-tagline">Explainable deep learning for medical imaging &middot; Data science &middot; Mathematics</p>
+      <p class="hero-tagline">Computer Vision &middot; Trustworthy AI &middot; Optimization</p>
       <a href="#research" class="btn-custom mt-6">See My Research</a>
     </div>
 
@@ -95,9 +95,8 @@
         <div class="col-lg-7">
           <h3>Hello, I'm <span class="text-primary">Hafza Noor</span></h3>
           <p>
-            I am a master's student at Bahauddin Zakariya University, Multan, with a BS in Mathematics (computational
-            and applied). My current research is in medical AI: building explainable, uncertainty-aware deep learning
-            models for brain tumor MRI, from 2D tumor classification to 3D multimodal tumor segmentation, supervised by
+            I am a mathematics researcher at Bahauddin Zakariya University, Multan, working on trustworthy deep learning
+            for brain tumor MRI: from 2D tumor classification to 3D multimodal tumor segmentation, supervised by
             Dr.&nbsp;Fiza Zafar.
           </p>
           <p>
@@ -114,9 +113,11 @@
         <div class="col-lg-5">
           <ul class="about-info">
             <li><strong>Name:</strong> Hafza Noor</li>
-            <li><strong>Email:</strong> <a href="mailto:hafzanoor3106@gmail.com">hafzanoor3106@gmail.com</a></li>
+            <li><strong>Email:</strong> <a href="mailto:noorhafza01@gmail.com">noorhafza01@gmail.com</a></li>
+            <li><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/923033106904" target="_blank" rel="noopener">+92 303 3106904</a></li>
+            <li><strong>WeChat:</strong> Hafsa_Noor</li>
             <li><strong>From:</strong> Punjab, Pakistan</li>
-            <li><strong>Research interests:</strong> Medical image analysis, explainable &amp; trustworthy AI, 3D segmentation, optimization</li>
+            <li><strong>Research interests:</strong> Computer vision &amp; image analysis (incl. medical imaging), trustworthy AI, optimization</li>
             <li><strong>Status:</strong> Seeking fully funded PhD / research opportunities</li>
           </ul>
           <a href="images/Resume/resume.pdf" target="_blank" class="btn-custom mt-3">Download CV</a>
@@ -130,7 +131,7 @@
     <div class="container">
       <div class="text-center mb-5">
         <h2>Research &amp; AI Projects</h2>
-        <p class="section-subtitle">Medical imaging work from the past year</p>
+        <p class="section-subtitle">Recent work in computer vision and trustworthy AI</p>
       </div>
 
       <div class="row g-4">
@@ -148,16 +149,17 @@
             <div class="research-stats">
               <div><strong>95.2%</strong><small>accuracy (1,600 test images)</small></div>
               <div><strong>92.8%</strong><small>on duplicate-free subset</small></div>
-              <div><strong>0.028</strong><small>ECE (calibration error)</small></div>
+              <div><strong>0.951</strong><small>macro F1 (full test set)</small></div>
             </div>
             <p class="research-note">
-              A perceptual-hash audit found 36.4% of test images duplicated training images, so I report the clean-subset
-              score as the honest estimate.
+              A perceptual-hash audit found 582 test images (36.4%) duplicated in training, so I report the clean-subset
+              score as the honest estimate. Error analysis flagged glioma as the weakest class (recall 82%), and
+              temperature scaling (T&nbsp;=&nbsp;1.83) cut negative log-likelihood by 15%.
             </p>
             <p class="research-tools">PyTorch &middot; Grad-CAM &middot; FAISS &middot; LangChain &middot; Gradio</p>
             <div class="research-links">
               <a href="https://github.com/hafzanoor/MRI_Agent_Gradio" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
-              <a href="https://huggingface.co/spaces/HafzaNoor/Brain_tumor_classification_agent" target="_blank" rel="noopener"><i class="fas fa-play-circle"></i> Demo</a>
+              <a href="https://hafzanoor-brain-tumor-classification-agent.hf.space/" target="_blank" rel="noopener"><i class="fas fa-play-circle"></i> Demo</a>
             </div>
           </div>
         </div>
@@ -168,7 +170,7 @@
             <span class="research-tag in-progress">Ongoing research</span>
             <h4>3D Multimodal Brain Tumor Segmentation</h4>
             <p>
-              Supervised by Dr.&nbsp;Fiza Zafar (BZU). A lightweight 3D U-Net segments whole tumor, tumor core and
+              Supervised by Dr.&nbsp;Fiza Zafar (BZU), toward segmentation in real-world MRI data. A lightweight 3D U-Net segments whole tumor, tumor core and
               enhancing tumor from four MRI modalities (FLAIR, T1w, T1gd, T2w) on 484 volumes from the Medical Segmentation
               Decathlon (BraTS-derived). A patient-level split (338 / 73 / 73) prevents train&ndash;test leakage.
               Next step: extension to real-world clinical MRI.
@@ -196,7 +198,7 @@
             </p>
             <p class="research-tools">Streamlit &middot; PyTorch &middot; LangChain &middot; Groq</p>
             <div class="research-links">
-              <a href="https://github.com/Hafza-Noor/brain-tumor-mri-agent" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+              <a href="https://github.com/hafzanoor/brain-tumor-mri-agent" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
         </div>
@@ -204,14 +206,18 @@
         <!-- Research 4 -->
         <div class="col-lg-6">
           <div class="research-card">
-            <span class="research-tag">BS research</span>
-            <h4>Feature Selection with the Artificial Bee Colony (ABC) Algorithm</h4>
+            <span class="research-tag">Undergraduate research &middot; Seminar</span>
+            <h4>Feature Selection for Tumor Classification using the Artificial Bee Colony Algorithm</h4>
             <p>
-              Swarm-intelligence feature selection for supervised learning: the ABC metaheuristic searches for the
-              feature subset that minimizes error, compared against traditional selection methods on accuracy,
-              convergence and computational cost.
+              Feature subset selection on tumor classification data formulated as an optimization problem minimizing
+              classification error and solved with the ABC swarm-intelligence metaheuristic, compared with traditional
+              methods on accuracy, convergence and computational cost. Supervised by Dr.&nbsp;Fiza Zafar (grade 4.00/4.00);
+              presented at a CASPAM departmental seminar, 2025.
             </p>
-            <p class="research-tools">Python &middot; NumPy &middot; Scikit-learn &middot; Optimization</p>
+            <p class="research-tools">Python &middot; NumPy &middot; Pandas &middot; Scikit-learn</p>
+            <div class="research-links">
+              <a href="https://github.com/hafzanoor/Feature-Selection-using-ABC-Algorithm" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+            </div>
           </div>
         </div>
 
@@ -286,23 +292,31 @@
           <h3 class="mb-4">My Education</h3>
           <div class="resume-box">
             <span>2025 - Present</span>
-            <h4>Master's Degree</h4>
+            <h4>Graduate Studies in Mathematics (CGPA 3.70 / 4)</h4>
             <p class="text-muted">Bahauddin Zakariya University, Multan</p>
-            <p>Research in medical AI: explainable brain tumor MRI classification and 3D multimodal tumor segmentation, supervised by Dr. Fiza Zafar.</p>
+            <p>4th in class. A grades in Deep Learning with Neural Networks, Optimization for Machine Learning, and Integral Inequalities. Research with Dr. Fiza Zafar on brain tumor MRI.</p>
           </div>
           <div class="resume-box">
             <span>2021 - 2025</span>
             <h4>BS Mathematics (CGPA 3.25 / 4)</h4>
             <p class="text-muted">Bahauddin Zakariya University, Multan</p>
-            <p>Computational and applied mathematics. Coursework in linear algebra, probability &amp; statistics, numerical analysis, operations research and optimization. Final research on feature selection with the Artificial Bee Colony algorithm.</p>
+            <p>Computational and applied mathematics. Coursework in linear algebra, probability &amp; statistics, numerical analysis, operations research and optimization. First Division; A grades in Optimization Theory, Design and Analysis of Algorithms, Time Series Analysis and the Final-Year Project.</p>
           </div>
           <h3 class="mb-4 mt-5">Certifications</h3>
           <div class="resume-box">
             <ul class="cert-list">
+              <li>Introduction to TensorFlow for AI, ML and Deep Learning &ndash; DeepLearning.AI</li>
               <li>Data Science Professional Certificate &ndash; IBM</li>
               <li>ETL and Data Pipelines with Shell, Airflow and Kafka &ndash; IBM</li>
               <li>Introduction to Structured Query Language (SQL) &ndash; University of Michigan</li>
               <li>Business Analytics for Decision Making &ndash; University of Colorado Boulder</li>
+            </ul>
+          </div>
+          <h3 class="mb-4 mt-5">Presentations</h3>
+          <div class="resume-box">
+            <ul class="cert-list">
+              <li><em>Feature Selection for Tumor Classification using the Artificial Bee Colony Algorithm</em> &ndash; departmental seminar, CASPAM, BZU, 2025</li>
+              <li><em>Explainable Brain Tumor MRI Classification with Uncertainty-Aware Decision Support</em> &ndash; graduate class presentation, BZU, 2026</li>
             </ul>
           </div>
         </div>
@@ -310,21 +324,27 @@
           <h3 class="mb-4">My Experience</h3>
           <div class="resume-box">
             <span>2025 - Present</span>
-            <h4>Graduate Researcher &ndash; Medical Image Analysis</h4>
+            <h4>Researcher &ndash; Medical Image Analysis</h4>
             <p class="text-muted">Bahauddin Zakariya University, Multan</p>
             <p>Building and evaluating deep learning models for brain tumor MRI (classification, 3D segmentation), including leakage audits, calibration analysis and explainability.</p>
           </div>
           <div class="resume-box">
-            <span>2024 - Present</span>
-            <h4>Freelance Data Analyst</h4>
+            <span>Jan 2024 - Present</span>
+            <h4>Freelance Data Analyst &amp; Consultant</h4>
             <p class="text-muted">Remote</p>
             <p>Data pipelines, SQL extraction and cleaning, and interactive Power BI dashboards with DAX KPIs for client reporting.</p>
           </div>
           <div class="resume-box">
             <span>2022 - 2024</span>
-            <h4>Teaching Instructor &ndash; Mathematics &amp; Programming</h4>
-            <p class="text-muted">Private academy / freelance</p>
-            <p>Taught mathematics, MATLAB, Maple and Python to intermediate (F.Sc) students, with one-on-one academic support.</p>
+            <h4>Mathematics Instructor</h4>
+            <p class="text-muted">Gulshan Academy, Multan</p>
+            <p>Taught FSc mathematics (including Maple); designed and graded assessments and gave one-on-one support in problem solving.</p>
+          </div>
+          <div class="resume-box">
+            <span>2023 - 2024</span>
+            <h4>Girls Representative, BS Mathematics</h4>
+            <p class="text-muted">Bahauddin Zakariya University, Multan</p>
+            <p>Represented female students of the program and liaised with faculty on academic and administrative matters.</p>
           </div>
           <div class="resume-box">
             <span>2022 - 2024</span>
@@ -467,7 +487,8 @@
         <li><a href="https://www.facebook.com/profile.php?id=61580635747809" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
         <li><a href="https://github.com/hafzanoor" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
         <li><a href="https://www.linkedin.com/in/hafza-noor-a40ab1236/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="mailto:hafzanoor3106@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="mailto:noorhafza01@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://wa.me/923033106904" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
       </ul>
     </div>
   </footer>

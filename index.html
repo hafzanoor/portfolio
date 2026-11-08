@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hafza Noor</title>
+  <title>Hafza Noor | Medical AI &amp; Data Science</title>
+  <meta name="description" content="Hafza Noor – mathematics graduate and master's student at Bahauddin Zakariya University researching explainable deep learning for brain tumor MRI classification and 3D segmentation.">
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.png" type="image/png">
@@ -48,6 +49,7 @@
           <ul class="navbar-nav mx-auto">
             <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
             <li class="nav-item"><a class="nav-link" href="#services">What I Do</a></li>
             <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
             <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
@@ -56,13 +58,9 @@
 
           <!-- Right: Social Icons -->
           <ul class="navbar-nav ms-auto d-flex align-items-center">
-            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/profile.php?id=61580635747809"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="nav-item">
-  <a class="nav-link" href="https://github.com/Hafza-Noor" target="_blank">
-    <i class="fab fa-github"></i>
-  </a>
-</li>
-            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/hafza-noor-a40ab1236/"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/profile.php?id=61580635747809" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://github.com/hafzanoor" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/hafza-noor-a40ab1236/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
           </ul>
 
         </div>
@@ -75,19 +73,15 @@
     <div class="overlay"></div>
 
     <div class="container text-center text-white">
-  
-  <p class="welcome-text">Welcome</p>
-
- <h1>I'm <span id="typed"></span></h1>
-
-  <a href="#contact" class="btn-custom mt-6">Hire Me</a>
-
-</div>
+      <p class="welcome-text">Welcome</p>
+      <h1>I'm <span id="typed"></span></h1>
+      <p class="hero-tagline">Explainable deep learning for medical imaging &middot; Data science &middot; Mathematics</p>
+      <a href="#research" class="btn-custom mt-6">See My Research</a>
+    </div>
 
     <div class="scroll-down">
       <i class="fas fa-angle-down"></i>
     </div>
-   
   </section>
 
   <!-- ABOUT SECTION -->
@@ -101,21 +95,128 @@
         <div class="col-lg-7">
           <h3>Hello, I'm <span class="text-primary">Hafza Noor</span></h3>
           <p>
-I am a data science student with a background in computational mathematics. I work with real datasets, focusing on data analysis and machine learning.          </p>
+            I am a master's student at Bahauddin Zakariya University, Multan, with a BS in Mathematics (computational
+            and applied). My current research is in medical AI: building explainable, uncertainty-aware deep learning
+            models for brain tumor MRI, from 2D tumor classification to 3D multimodal tumor segmentation, supervised by
+            Dr.&nbsp;Fiza Zafar.
+          </p>
           <p>
-            My work involves data cleaning, feature engineering, and model evaluation. I aim to build reliable models grounded in mathematical understanding.
+            I care about models that can be trusted, not just models that score well. In my MRI work I audited the
+            benchmark for train&ndash;test leakage, measured calibration, and added Grad-CAM explanations and human-review
+            escalation. My mathematics background (optimization, statistics and numerical analysis) shapes how I design
+            and evaluate models.
+          </p>
+          <p>
+            Alongside research, I work as a freelance data analyst building dashboards and data pipelines in
+            Power&nbsp;BI, SQL and Excel.
           </p>
         </div>
         <div class="col-lg-5">
           <ul class="about-info">
             <li><strong>Name:</strong> Hafza Noor</li>
-            <li><strong>Email:</strong> hafzanoor3106@gmail.com</li>
-            <!-- <li><strong>Age:</strong> 28</li> -->
+            <li><strong>Email:</strong> <a href="mailto:hafzanoor3106@gmail.com">hafzanoor3106@gmail.com</a></li>
             <li><strong>From:</strong> Punjab, Pakistan</li>
+            <li><strong>Research interests:</strong> Medical image analysis, explainable &amp; trustworthy AI, 3D segmentation, optimization</li>
+            <li><strong>Status:</strong> Seeking fully funded PhD / research opportunities</li>
           </ul>
-          <a href="images/resume/resume.pdf" target="_blank" class="btn-custom mt-3">Download CV</a>
+          <a href="images/Resume/resume.pdf" target="_blank" class="btn-custom mt-3">Download CV</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH SECTION -->
+  <section id="research" class="research-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Research &amp; AI Projects</h2>
+        <p class="section-subtitle">Medical imaging work from the past year</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Research 1 -->
+        <div class="col-lg-6">
+          <div class="research-card">
+            <span class="research-tag">Published code &middot; Live demo</span>
+            <h4>Explainable Brain Tumor MRI Classification with Uncertainty-Aware Decision Support</h4>
+            <p>
+              MobileNetV2 fine-tuned in PyTorch to classify brain MRI into glioma, meningioma, pituitary tumor and no tumor.
+              Grad-CAM heatmaps explain each prediction, low-confidence cases are escalated for human review, and a
+              retrieval step (MiniLM + FAISS) feeds an LLM that writes a short educational report.
+            </p>
+            <div class="research-stats">
+              <div><strong>95.2%</strong><small>accuracy (1,600 test images)</small></div>
+              <div><strong>92.8%</strong><small>on duplicate-free subset</small></div>
+              <div><strong>0.028</strong><small>ECE (calibration error)</small></div>
+            </div>
+            <p class="research-note">
+              A perceptual-hash audit found 36.4% of test images duplicated training images, so I report the clean-subset
+              score as the honest estimate.
+            </p>
+            <p class="research-tools">PyTorch &middot; Grad-CAM &middot; FAISS &middot; LangChain &middot; Gradio</p>
+            <div class="research-links">
+              <a href="https://github.com/hafzanoor/MRI_Agent_Gradio" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+              <a href="https://huggingface.co/spaces/HafzaNoor/Brain_tumor_classification_agent" target="_blank" rel="noopener"><i class="fas fa-play-circle"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research 2 -->
+        <div class="col-lg-6">
+          <div class="research-card">
+            <span class="research-tag in-progress">Ongoing research</span>
+            <h4>3D Multimodal Brain Tumor Segmentation</h4>
+            <p>
+              Supervised by Dr.&nbsp;Fiza Zafar (BZU). A lightweight 3D U-Net segments whole tumor, tumor core and
+              enhancing tumor from four MRI modalities (FLAIR, T1w, T1gd, T2w) on 484 volumes from the Medical Segmentation
+              Decathlon (BraTS-derived). A patient-level split (338 / 73 / 73) prevents train&ndash;test leakage.
+              Next step: extension to real-world clinical MRI.
+            </p>
+            <ul class="research-list">
+              <li>Brain-voxel z-score normalization per modality</li>
+              <li>Soft Dice loss, 128&sup3; patch training on a Tesla T4 GPU</li>
+              <li>Gradio prototype: upload a NIfTI volume, get region volumes, slice overlays and related textbook passages</li>
+            </ul>
+            <p class="research-tools">PyTorch &middot; 3D U-Net &middot; NiBabel &middot; FAISS &middot; Gradio</p>
+            <div class="research-links">
+              <a href="https://github.com/hafzanoor/Brain-Tumor-3D-Segmentation" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research 3 -->
+        <div class="col-lg-6">
+          <div class="research-card">
+            <span class="research-tag">AI agent app</span>
+            <h4>Brain MRI Classification &amp; Decision Support Agent (Streamlit)</h4>
+            <p>
+              A multi-tool agent app: scan analysis with Grad-CAM, an adjustable escalation threshold with a review queue,
+              and an interactive chat that answers follow-up questions using a knowledge base and an LLM (Groq).
+            </p>
+            <p class="research-tools">Streamlit &middot; PyTorch &middot; LangChain &middot; Groq</p>
+            <div class="research-links">
+              <a href="https://github.com/Hafza-Noor/brain-tumor-mri-agent" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research 4 -->
+        <div class="col-lg-6">
+          <div class="research-card">
+            <span class="research-tag">BS research</span>
+            <h4>Feature Selection with the Artificial Bee Colony (ABC) Algorithm</h4>
+            <p>
+              Swarm-intelligence feature selection for supervised learning: the ABC metaheuristic searches for the
+              feature subset that minimizes error, compared against traditional selection methods on accuracy,
+              convergence and computational cost.
+            </p>
+            <p class="research-tools">Python &middot; NumPy &middot; Scikit-learn &middot; Optimization</p>
+          </div>
+        </div>
+
+      </div>
+      <p class="text-center research-disclaimer">Research prototypes for educational use only &ndash; not for clinical diagnosis.</p>
     </div>
   </section>
 
@@ -124,49 +225,49 @@ I am a data science student with a background in computational mathematics. I wo
     <div class="container">
       <div class="text-center mb-5">
         <h2>What I Do</h2>
-        <p class="section-subtitle">How I can help your next project</p>
+        <p class="section-subtitle">Skills I bring to research and projects</p>
       </div>
       <div class="row">
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="service-box">
+            <i class="fas fa-x-ray service-icon"></i>
+            <h4>Medical Image Analysis</h4>
+            <p>2D classification and 3D segmentation of MRI with CNNs and U-Nets in PyTorch.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="service-box">
+            <i class="fas fa-eye service-icon"></i>
+            <h4>Explainable &amp; Trustworthy AI</h4>
+            <p>Grad-CAM explanations, calibration (ECE, temperature scaling) and leakage audits.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="service-box">
+            <i class="fas fa-robot service-icon"></i>
+            <h4>AI Agents &amp; RAG Apps</h4>
+            <p>Retrieval with embeddings and FAISS, LLM reports, deployed with Gradio and Streamlit.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="service-box">
             <i class="fas fa-brain service-icon"></i>
             <h4>Machine Learning Modeling</h4>
-            <p>Building regression and classification models with proper validation and tuning.</p>
+            <p>Regression and classification models with proper validation, tuning and evaluation.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="service-box">
-           <i class="fas fa-chart-line service-icon"></i>
-            <h4>Data Analysis & EDA</h4>
-            <p>Exploring datasets, identifying patterns, and preparing data for modeling.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="service-box">
-            <i class="fas fa-filter service-icon"></i>
-            <h4>Data Cleaning & Feature Engineering</h4>
-            <p>Handling missing data, outliers, and creating meaningful features from raw data.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="service-box">
-            <i class="fas fa-check-circle service-icon"></i>
-            <h4>Model Evaluation & Validation</h4>
-            <p>Applying cross-validation and performance metrics to ensure reliable models.</p>
+            <i class="fas fa-project-diagram service-icon"></i>
+            <h4>Optimization &amp; Metaheuristics</h4>
+            <p>Linear and integer programming, genetic algorithms, PSO and Artificial Bee Colony.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="service-box">
             <i class="fas fa-chart-bar service-icon"></i>
-            <h4>Data Visualization & Dashboards</h4>
-            <p>Communicating insights using visualizations and tools like Power BI.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="service-box">
-          <!--   <i class="fas fa-pencil-ruler"></i>   -->
-            <h4>                                 </h4>
-            <p>                                                                   </p>
+            <h4>Data Analysis &amp; Dashboards</h4>
+            <p>Data cleaning, EDA and interactive dashboards with Python, SQL, Excel and Power BI.</p>
           </div>
         </div>
       </div>
@@ -184,154 +285,175 @@ I am a data science student with a background in computational mathematics. I wo
         <div class="col-md-6">
           <h3 class="mb-4">My Education</h3>
           <div class="resume-box">
-            <span>2021 - 2025</span>
-            <h4>Bachelor Degree </h4>
-            <p class="text-muted">Bahauddin Zakaria university</p>
-            <p>Graduated in Computational Mathematics.Strong background in mathematical modeling, probability, and statistical analysis.</p>
+            <span>2025 - Present</span>
+            <h4>Master's Degree</h4>
+            <p class="text-muted">Bahauddin Zakariya University, Multan</p>
+            <p>Research in medical AI: explainable brain tumor MRI classification and 3D multimodal tumor segmentation, supervised by Dr. Fiza Zafar.</p>
           </div>
           <div class="resume-box">
-            <span>2025 - Continue</span>
-            <h4>Master Degree</h4>
-            <p class="text-muted">Bahauddin Zakaria university</p>
-            <p></p>
+            <span>2021 - 2025</span>
+            <h4>BS Mathematics (CGPA 3.25 / 4)</h4>
+            <p class="text-muted">Bahauddin Zakariya University, Multan</p>
+            <p>Computational and applied mathematics. Coursework in linear algebra, probability &amp; statistics, numerical analysis, operations research and optimization. Final research on feature selection with the Artificial Bee Colony algorithm.</p>
+          </div>
+          <h3 class="mb-4 mt-5">Certifications</h3>
+          <div class="resume-box">
+            <ul class="cert-list">
+              <li>Data Science Professional Certificate &ndash; IBM</li>
+              <li>ETL and Data Pipelines with Shell, Airflow and Kafka &ndash; IBM</li>
+              <li>Introduction to Structured Query Language (SQL) &ndash; University of Michigan</li>
+              <li>Business Analytics for Decision Making &ndash; University of Colorado Boulder</li>
+            </ul>
           </div>
         </div>
         <div class="col-md-6">
           <h3 class="mb-4">My Experience</h3>
           <div class="resume-box">
-            <span>2024 - present</span>
-            <h4>Freelance data analyst</h4>
-            <p class="text-muted">  </p>
-            <p>Handling data cleaning, analysis, and visualization to support data-driven decision making.</p>
+            <span>2025 - Present</span>
+            <h4>Graduate Researcher &ndash; Medical Image Analysis</h4>
+            <p class="text-muted">Bahauddin Zakariya University, Multan</p>
+            <p>Building and evaluating deep learning models for brain tumor MRI (classification, 3D segmentation), including leakage audits, calibration analysis and explainability.</p>
           </div>
-         <!-- <div class="resume-box">
-            <span></span>
-            <h4> </h4>
-            <p class="text-muted"></p>
-            <p></p>
-          </div>-->
+          <div class="resume-box">
+            <span>2024 - Present</span>
+            <h4>Freelance Data Analyst</h4>
+            <p class="text-muted">Remote</p>
+            <p>Data pipelines, SQL extraction and cleaning, and interactive Power BI dashboards with DAX KPIs for client reporting.</p>
+          </div>
+          <div class="resume-box">
+            <span>2022 - 2024</span>
+            <h4>Teaching Instructor &ndash; Mathematics &amp; Programming</h4>
+            <p class="text-muted">Private academy / freelance</p>
+            <p>Taught mathematics, MATLAB, Maple and Python to intermediate (F.Sc) students, with one-on-one academic support.</p>
+          </div>
+          <div class="resume-box">
+            <span>2022 - 2024</span>
+            <h4>Executive Member &ndash; CASPAM Youth Development Council</h4>
+            <p class="text-muted">Dept. of Computational &amp; Applied Mathematics, BZU</p>
+            <p>Organized academic events, workshops and seminars; liaison between students and faculty.</p>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
   <!-- PORTFOLIO SECTION -->
-<section id="portfolio" class="portfolio-section">
-  <div class="container">
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
 
-    <!-- Title -->
-    <div class="text-center mb-5">
-      <h2>Portfolio</h2>
-      <p class="section-subtitle">Some of my recent work</p>
+      <div class="text-center mb-5">
+        <h2>Portfolio</h2>
+        <p class="section-subtitle">Data science &amp; analytics projects</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <video src="videos/project1.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            <div class="portfolio-overlay">
+              <h4>Data Analysis Project</h4>
+              <p>Python &amp; Pandas</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <video src="videos/project2.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            <div class="portfolio-overlay">
+              <h4>Dashboard</h4>
+              <p>Power BI</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <video src="videos/project3.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            <div class="portfolio-overlay">
+              <h4>Machine Learning Model</h4>
+              <p>Scikit-learn</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <video src="videos/project4.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            <div class="portfolio-overlay">
+              <h4>Visualization</h4>
+              <p>Matplotlib</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <video src="videos/project5.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            <div class="portfolio-overlay">
+              <h4>Sales Dashboard</h4>
+              <p>Excel</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <video src="videos/project6.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            <div class="portfolio-overlay">
+              <h4>Dynamic Dashboard</h4>
+              <p>Excel</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-
-    <div class="row g-4">
-
-      <!-- Project 1 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <video src="videos/project1.mp4" muted autoplay loop></video>
-          <div class="portfolio-overlay">
-            <h4>Data Analysis Project</h4>
-            <p>Python & Pandas</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <video src="videos/project2.mp4" muted autoplay loop></video>
-          <div class="portfolio-overlay">
-            <h4>Dashboard</h4>
-            <p>Power BI</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <video src="videos/project3.mp4" muted autoplay loop></video>
-          <div class="portfolio-overlay">
-            <h4>Machine Learning Model</h4>
-            <p>Scikit-learn</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <video src="videos/project4.mp4" muted autoplay loop></video>
-          <div class="portfolio-overlay">
-            <h4>Visualization</h4>
-            <p>Matplotlib</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 5 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <video src="videos/project5.mp4" muted autoplay loop></video>
-          <div class="portfolio-overlay">
-            <h4>Sales Dashboard</h4>
-            <p>Excel</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 6 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <video src="videos/project6.mp4" muted autoplay loop></video>
-          <div class="portfolio-overlay">
-            <h4>Dynamic dashboard</h4>
-            <p>Excel</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+  </section>
 
   <!-- CONTACT SECTION -->
   <section id="contact" class="contact-section">
     <div class="container">
       <div class="text-center mb-5">
         <h2>Contact Me</h2>
-        <p class="section-subtitle">Get in touch with me</p>
+        <p class="section-subtitle">Open to research collaborations and PhD opportunities</p>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <form id="contact-form" action="https://formspree.io/f/maqpaknk" method="POST" onsubmit="return false;">
 
-  <div class="row mb-3">
-    <div class="col-md-6">
-      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-    </div>
-    <div class="col-md-6">
-      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-    </div>
-  </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+              </div>
+            </div>
 
-  <div class="mb-3">
-    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-  </div>
+            <div class="mb-3">
+              <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+            </div>
 
-  <div class="mb-3">
-    <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
-  </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+            </div>
 
-  <div class="text-center">
-    <button type="submit" class="btn-custom" id="submit-btn">Send Message</button>
-  </div>
+            <div class="text-center">
+              <button type="submit" class="btn-custom" id="submit-btn">Send Message</button>
+            </div>
 
-  <!-- Message -->
-  <p id="form-status" style="display:none; color:#20c997; margin-top:10px;"></p>
+            <!-- Message -->
+            <p id="form-status" style="display:none; color:#20c997; margin-top:10px;"></p>
 
-</form>
+          </form>
         </div>
       </div>
     </div>
@@ -342,19 +464,17 @@ I am a data science student with a background in computational mathematics. I wo
     <div class="container text-center">
       <p>&copy; 2026 Hafza Noor. All Rights Reserved.</p>
       <ul class="social-icons list-unstyled d-flex justify-content-center mt-3">
-        <li><a href="https://www.facebook.com/profile.php?id=61580635747809"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="https://github.com/Hafza-Noor"><i class="fab fa-github"></i>  </a>
-</li>
-        <li><a href="https://www.linkedin.com/in/hafza-noor-a40ab1236/"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61580635747809" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://github.com/hafzanoor" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/hafza-noor-a40ab1236/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="mailto:hafzanoor3106@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
       </ul>
     </div>
   </footer>
 
   <!-- JS -->
   <script src="js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>  <script>
-  </script>
-<script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

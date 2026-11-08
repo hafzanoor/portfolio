@@ -50,6 +50,7 @@
             <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+            <li class="nav-item"><a class="nav-link" href="#talks">Talks</a></li>
             <li class="nav-item"><a class="nav-link" href="#services">What I Do</a></li>
             <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
             <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
@@ -74,7 +75,7 @@
 
     <div class="container text-center text-white">
       <p class="welcome-text">Welcome</p>
-      <h1>I'm <span id="typed"></span></h1>
+      <h1>I'm <span id="typed">Hafza Noor</span></h1>
       <p class="hero-tagline">Computer Vision &middot; Trustworthy AI &middot; Optimization</p>
       <a href="#research" class="btn-custom mt-6">See My Research</a>
     </div>
@@ -114,11 +115,8 @@
           <ul class="about-info">
             <li><strong>Name:</strong> Hafza Noor</li>
             <li><strong>Email:</strong> <a href="mailto:noorhafza01@gmail.com">noorhafza01@gmail.com</a></li>
-            <li><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/923033106904" target="_blank" rel="noopener">+92 303 3106904</a></li>
-            <li><strong>WeChat:</strong> Hafsa_Noor</li>
             <li><strong>From:</strong> Punjab, Pakistan</li>
             <li><strong>Research interests:</strong> Computer vision &amp; image analysis (incl. medical imaging), trustworthy AI, optimization</li>
-            <li><strong>Status:</strong> Seeking fully funded PhD / research opportunities</li>
           </ul>
           <a href="images/Resume/resume.pdf" target="_blank" class="btn-custom mt-3">Download CV</a>
         </div>
@@ -127,7 +125,7 @@
   </section>
 
   <!-- RESEARCH SECTION -->
-  <section id="research" class="research-section">
+    <section id="research" class="research-section">
     <div class="container">
       <div class="text-center mb-5">
         <h2>Research &amp; AI Projects</h2>
@@ -139,24 +137,23 @@
         <!-- Research 1 -->
         <div class="col-lg-6">
           <div class="research-card">
-            <span class="research-tag">Published code &middot; Live demo</span>
+            <span class="research-tag">Completed &middot; Live demo</span>
             <h4>Explainable Brain Tumor MRI Classification with Uncertainty-Aware Decision Support</h4>
             <p>
-              MobileNetV2 fine-tuned in PyTorch to classify brain MRI into glioma, meningioma, pituitary tumor and no tumor.
-              Grad-CAM heatmaps explain each prediction, low-confidence cases are escalated for human review, and a
-              retrieval step (MiniLM + FAISS) feeds an LLM that writes a short educational report.
+              Fine-tuned <strong>MobileNetV2</strong> classifies brain MRI into glioma, meningioma, pituitary tumor or no tumor,
+              with <strong>Grad-CAM</strong> explanations and <strong>human-review escalation</strong> for low-confidence scans.
             </p>
             <div class="research-stats">
-              <div><strong>95.2%</strong><small>accuracy (1,600 test images)</small></div>
+              <div><strong>95.2%</strong><small>accuracy, 1,600 test images</small></div>
               <div><strong>92.8%</strong><small>on duplicate-free subset</small></div>
-              <div><strong>0.951</strong><small>macro F1 (full test set)</small></div>
+              <div><strong>36.4%</strong><small>test images leaked from training</small></div>
             </div>
-            <p class="research-note">
-              A perceptual-hash audit found 582 test images (36.4%) duplicated in training, so I report the clean-subset
-              score as the honest estimate. Error analysis flagged glioma as the weakest class (recall 82%), and
-              temperature scaling (T&nbsp;=&nbsp;1.83) cut negative log-likelihood by 15%.
-            </p>
-            <p class="research-tools">PyTorch &middot; Grad-CAM &middot; FAISS &middot; LangChain &middot; Gradio</p>
+            <ul class="research-list">
+              <li><strong>Leakage audit</strong> with perceptual hashing found 582 duplicated test images, so I report the clean score.</li>
+              <li><strong>Error analysis:</strong> glioma is the weakest class (recall 82%).</li>
+              <li><strong>Calibration:</strong> temperature scaling (T&nbsp;=&nbsp;1.83) cut negative log-likelihood by 15%.</li>
+            </ul>
+            <div class="chips"><span>PyTorch</span><span>Grad-CAM</span><span>FAISS</span><span>LangChain</span><span>Gradio</span></div>
             <div class="research-links">
               <a href="https://github.com/hafzanoor/MRI_Agent_Gradio" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
               <a href="https://hafzanoor-brain-tumor-classification-agent.hf.space/" target="_blank" rel="noopener"><i class="fas fa-play-circle"></i> Demo</a>
@@ -170,17 +167,19 @@
             <span class="research-tag in-progress">Ongoing research</span>
             <h4>3D Multimodal Brain Tumor Segmentation</h4>
             <p>
-              Supervised by Dr.&nbsp;Fiza Zafar (BZU), toward segmentation in real-world MRI data. A lightweight 3D U-Net segments whole tumor, tumor core and
-              enhancing tumor from four MRI modalities (FLAIR, T1w, T1gd, T2w) on 484 volumes from the Medical Segmentation
-              Decathlon (BraTS-derived). A patient-level split (338 / 73 / 73) prevents train&ndash;test leakage.
-              Next step: extension to real-world clinical MRI.
+              A lightweight <strong>3D U-Net</strong> segments whole tumor, tumor core and enhancing tumor from four MRI
+              modalities, as groundwork for <strong>segmentation in real-world clinical MRI</strong>. Supervised by Dr.&nbsp;Fiza Zafar (BZU).
             </p>
+            <div class="research-stats">
+              <div><strong>484</strong><small>MRI volumes (BraTS-derived)</small></div>
+              <div><strong>4</strong><small>modalities: FLAIR, T1w, T1gd, T2w</small></div>
+              <div><strong>338/73/73</strong><small>patient-level split, no leakage</small></div>
+            </div>
             <ul class="research-list">
-              <li>Brain-voxel z-score normalization per modality</li>
-              <li>Soft Dice loss, 128&sup3; patch training on a Tesla T4 GPU</li>
-              <li>Gradio prototype: upload a NIfTI volume, get region volumes, slice overlays and related textbook passages</li>
+              <li>Per-modality z-score normalization on brain voxels; <strong>Dice loss</strong> on 128&sup3; patches.</li>
+              <li>Gradio prototype: upload a NIfTI scan, get region volumes and slice overlays.</li>
             </ul>
-            <p class="research-tools">PyTorch &middot; 3D U-Net &middot; NiBabel &middot; FAISS &middot; Gradio</p>
+            <div class="chips"><span>PyTorch</span><span>3D U-Net</span><span>NiBabel</span><span>FAISS</span><span>Gradio</span></div>
             <div class="research-links">
               <a href="https://github.com/hafzanoor/Brain-Tumor-3D-Segmentation" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
             </div>
@@ -191,12 +190,16 @@
         <div class="col-lg-6">
           <div class="research-card">
             <span class="research-tag">AI agent app</span>
-            <h4>Brain MRI Classification &amp; Decision Support Agent (Streamlit)</h4>
+            <h4>Brain MRI Decision-Support Agent (Streamlit)</h4>
             <p>
-              A multi-tool agent app: scan analysis with Grad-CAM, an adjustable escalation threshold with a review queue,
-              and an interactive chat that answers follow-up questions using a knowledge base and an LLM (Groq).
+              A <strong>multi-tool AI agent</strong> that analyzes a scan, explains it with Grad-CAM, and escalates uncertain
+              cases to a review queue, with a <strong>chat assistant</strong> that answers follow-up questions from a knowledge base.
             </p>
-            <p class="research-tools">Streamlit &middot; PyTorch &middot; LangChain &middot; Groq</p>
+            <div class="research-stats">
+              <div><strong>4</strong><small>agent tools: classify, explain, escalate, retrieve</small></div>
+              <div><strong>Adjustable</strong><small>confidence threshold for review</small></div>
+            </div>
+            <div class="chips"><span>Streamlit</span><span>PyTorch</span><span>LangChain</span><span>Groq LLM</span></div>
             <div class="research-links">
               <a href="https://github.com/hafzanoor/brain-tumor-mri-agent" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
             </div>
@@ -206,15 +209,17 @@
         <!-- Research 4 -->
         <div class="col-lg-6">
           <div class="research-card">
-            <span class="research-tag">Undergraduate research &middot; Seminar</span>
+            <span class="research-tag">Completed &middot; Seminar talk</span>
             <h4>Feature Selection for Tumor Classification using the Artificial Bee Colony Algorithm</h4>
             <p>
-              Feature subset selection on tumor classification data formulated as an optimization problem minimizing
-              classification error and solved with the ABC swarm-intelligence metaheuristic, compared with traditional
-              methods on accuracy, convergence and computational cost. Supervised by Dr.&nbsp;Fiza Zafar (grade 4.00/4.00);
-              presented at a CASPAM departmental seminar, 2025.
+              Feature selection framed as an <strong>optimization problem</strong> that minimizes classification error, solved with
+              the <strong>Artificial Bee Colony</strong> swarm-intelligence algorithm and compared with traditional methods.
             </p>
-            <p class="research-tools">Python &middot; NumPy &middot; Pandas &middot; Scikit-learn</p>
+            <div class="research-stats">
+              <div><strong>4.00/4.00</strong><small>project grade</small></div>
+              <div><strong>3</strong><small>criteria: accuracy, convergence, cost</small></div>
+            </div>
+            <div class="chips"><span>Python</span><span>NumPy</span><span>Pandas</span><span>Scikit-learn</span><span>Metaheuristics</span></div>
             <div class="research-links">
               <a href="https://github.com/hafzanoor/Feature-Selection-using-ABC-Algorithm" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
             </div>
@@ -223,6 +228,34 @@
 
       </div>
       <p class="text-center research-disclaimer">Research prototypes for educational use only &ndash; not for clinical diagnosis.</p>
+    </div>
+  </section>
+
+  <!-- TALKS SECTION -->
+  <section id="talks" class="talks-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Talks &amp; Presentations</h2>
+        <p class="section-subtitle">Sharing research with the academic community</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="talk-item">
+            <div class="talk-year">2026</div>
+            <div>
+              <h5>Explainable Brain Tumor MRI Classification with Uncertainty-Aware Decision Support</h5>
+              <p>Graduate class presentation &middot; Bahauddin Zakariya University, Multan</p>
+            </div>
+          </div>
+          <div class="talk-item">
+            <div class="talk-year">2025</div>
+            <div>
+              <h5>Feature Selection for Tumor Classification using the Artificial Bee Colony Algorithm</h5>
+              <p>Departmental seminar &middot; CASPAM, Bahauddin Zakariya University, Multan</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -312,13 +345,6 @@
               <li>Business Analytics for Decision Making &ndash; University of Colorado Boulder</li>
             </ul>
           </div>
-          <h3 class="mb-4 mt-5">Presentations</h3>
-          <div class="resume-box">
-            <ul class="cert-list">
-              <li><em>Feature Selection for Tumor Classification using the Artificial Bee Colony Algorithm</em> &ndash; departmental seminar, CASPAM, BZU, 2025</li>
-              <li><em>Explainable Brain Tumor MRI Classification with Uncertainty-Aware Decision Support</em> &ndash; graduate class presentation, BZU, 2026</li>
-            </ul>
-          </div>
         </div>
         <div class="col-md-6">
           <h3 class="mb-4">My Experience</h3>
@@ -358,82 +384,82 @@
   </section>
 
   <!-- PORTFOLIO SECTION -->
-  <section id="portfolio" class="portfolio-section">
+    <section id="portfolio" class="portfolio-section">
     <div class="container">
 
       <div class="text-center mb-5">
-        <h2>Portfolio</h2>
-        <p class="section-subtitle">Data science &amp; analytics projects</p>
+        <h2>Data Science &amp; Analytics Projects</h2>
+        <p class="section-subtitle">Machine learning, data cleaning and business dashboards</p>
       </div>
 
       <div class="row g-4">
 
-        <!-- Project 1 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item">
-            <video src="videos/project1.mp4" muted autoplay loop playsinline preload="metadata"></video>
-            <div class="portfolio-overlay">
-              <h4>Data Analysis Project</h4>
-              <p>Python &amp; Pandas</p>
+          <div class="project-card">
+            <video src="videos/project4.mp4" muted autoplay loop playsinline preload="metadata" aria-label="House Price Prediction with Linear Regression demo"></video>
+            <div class="project-body">
+              <h4>House Price Prediction with Linear Regression</h4>
+              <p>Predicted house prices from income, house age, rooms and population on 5,000 records, with exploratory pair plots, a train/test split and model evaluation.</p>
+              <div class="chips"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Seaborn</span></div>
             </div>
           </div>
         </div>
 
-        <!-- Project 2 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item">
-            <video src="videos/project2.mp4" muted autoplay loop playsinline preload="metadata"></video>
-            <div class="portfolio-overlay">
-              <h4>Dashboard</h4>
-              <p>Power BI</p>
+          <div class="project-card">
+            <video src="videos/project3.mp4" muted autoplay loop playsinline preload="metadata" aria-label="Bike-Sharing Demand Analysis demo"></video>
+            <div class="project-body">
+              <h4>Bike-Sharing Demand Analysis</h4>
+              <p>Explored how season, weather and humidity drive bike rentals: demand peaks in fall and on good-weather days, and is lowest in spring.</p>
+              <div class="chips"><span>Python</span><span>Pandas</span><span>Seaborn</span><span>Matplotlib</span></div>
             </div>
           </div>
         </div>
 
-        <!-- Project 3 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item">
-            <video src="videos/project3.mp4" muted autoplay loop playsinline preload="metadata"></video>
-            <div class="portfolio-overlay">
-              <h4>Machine Learning Model</h4>
-              <p>Scikit-learn</p>
+          <div class="project-card">
+            <video src="videos/project1.mp4" muted autoplay loop playsinline preload="metadata" aria-label="Data Cleaning: NFL Play-by-Play Data demo"></video>
+            <div class="project-body">
+              <h4>Data Cleaning: NFL Play-by-Play Data</h4>
+              <p>Diagnosed missing data (about 28% of all cells empty), reasoned about why values were missing, and compared dropping versus filling strategies.</p>
+              <div class="chips"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Jupyter</span></div>
             </div>
           </div>
         </div>
 
-        <!-- Project 4 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item">
-            <video src="videos/project4.mp4" muted autoplay loop playsinline preload="metadata"></video>
-            <div class="portfolio-overlay">
-              <h4>Visualization</h4>
-              <p>Matplotlib</p>
+          <div class="project-card">
+            <video src="videos/project2.mp4" muted autoplay loop playsinline preload="metadata" aria-label="Mega Coffee Sales Analysis Dashboard demo"></video>
+            <div class="project-body">
+              <h4>Mega Coffee Sales Analysis Dashboard</h4>
+              <p>Interactive Power BI dashboard: yearly profit-target gauges, profit by country on a map, and profit by category, with product, category, location and year slicers.</p>
+              <div class="chips"><span>Power BI</span><span>DAX</span><span>Power Query</span></div>
             </div>
           </div>
         </div>
 
-        <!-- Project 5 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item">
-            <video src="videos/project5.mp4" muted autoplay loop playsinline preload="metadata"></video>
-            <div class="portfolio-overlay">
-              <h4>Sales Dashboard</h4>
-              <p>Excel</p>
+          <div class="project-card">
+            <video src="videos/project5.mp4" muted autoplay loop playsinline preload="metadata" aria-label="Amazon Sales KPI Dashboard demo"></video>
+            <div class="project-body">
+              <h4>Amazon Sales KPI Dashboard: Actual vs Target</h4>
+              <p>Excel dashboard tracking sales, units sold and city coverage against targets, with breakdowns by product, state and city.</p>
+              <div class="chips"><span>Excel</span><span>Pivot Tables</span><span>KPIs</span></div>
             </div>
           </div>
         </div>
 
-        <!-- Project 6 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item">
-            <video src="videos/project6.mp4" muted autoplay loop playsinline preload="metadata"></video>
-            <div class="portfolio-overlay">
-              <h4>Dynamic Dashboard</h4>
-              <p>Excel</p>
+          <div class="project-card">
+            <video src="videos/project6.mp4" muted autoplay loop playsinline preload="metadata" aria-label="Trading Journal & Performance Dashboard demo"></video>
+            <div class="project-body">
+              <h4>Trading Journal & Performance Dashboard</h4>
+              <p>Excel dashboard for a trading journal: equity growth, P&amp;L by time frame and by currency pair, win rate and target tracking, with interactive slicers.</p>
+              <div class="chips"><span>Excel</span><span>Slicers</span><span>Dashboard Design</span></div>
+              <div class="research-links"><a href="https://github.com/hafzanoor/Excel-Trade-Dashboard" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a></div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -443,7 +469,7 @@
     <div class="container">
       <div class="text-center mb-5">
         <h2>Contact Me</h2>
-        <p class="section-subtitle">Open to research collaborations and PhD opportunities</p>
+        <p class="section-subtitle">Open to research collaborations, roles and projects</p>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -488,7 +514,6 @@
         <li><a href="https://github.com/hafzanoor" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
         <li><a href="https://www.linkedin.com/in/hafza-noor-a40ab1236/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
         <li><a href="mailto:noorhafza01@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
-        <li><a href="https://wa.me/923033106904" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
       </ul>
     </div>
   </footer>

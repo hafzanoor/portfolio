@@ -21,8 +21,272 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/style.css?v=20261108">
+  <link rel="stylesheet" href="./css/responsive.css?v=20261108">
+
+  <!-- Styles for the 2026 sections (kept inline so the page works even if style.css is cached) -->
+  <style id="portfolio-2026">
+/* =========================
+   HERO TAGLINE (added Nov 2026)
+========================= */
+.hero-tagline {
+    font-size: 18px;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+.about-info a {
+    color: #20c997;
+    text-decoration: none;
+}
+
+/* =========================
+   RESEARCH SECTION (added Nov 2026)
+========================= */
+.research-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.research-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.research-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 28px;
+    height: 100%;
+    border-top: 4px solid #20c997;
+    transition: 0.3s;
+}
+
+.research-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.research-card h4 {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 12px 0;
+}
+
+.research-card p,
+.research-list {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.research-tag {
+    display: inline-block;
+    background: #20c997;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+.research-tag.in-progress {
+    background: #f0ad4e;
+}
+
+.research-stats {
+    display: flex;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.research-stats div {
+    flex: 1;
+    background: #f1fbf8;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+}
+
+.research-stats strong {
+    display: block;
+    font-size: 22px;
+    color: #20c997;
+}
+
+.research-stats small {
+    color: #666;
+    font-size: 12px;
+}
+
+.research-note {
+    font-size: 13px !important;
+    font-style: italic;
+}
+
+.research-tools {
+    font-size: 13px !important;
+    color: #20c997 !important;
+    font-weight: 500;
+}
+
+.research-links a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #111;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.research-links a:hover {
+    color: #20c997;
+}
+
+.research-disclaimer {
+    color: #888;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.cert-list {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 14px;
+    color: #555;
+}
+
+.cert-list li {
+    margin-bottom: 6px;
+}
+
+@media (max-width: 576px) {
+    .research-stats {
+        flex-wrap: wrap;
+    }
+    .research-stats div {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 34px;
+    }
+}
+
+/* =========================
+   CHIPS, PROJECT CARDS, TALKS (added Nov 2026)
+========================= */
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 12px 0;
+}
+
+.chips span {
+    background: #eef9f5;
+    color: #138a68;
+    border: 1px solid #c8eee1;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.research-list {
+    padding-left: 18px;
+    margin-bottom: 0;
+}
+
+.research-list li {
+    margin-bottom: 4px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.project-card video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    background: #111;
+}
+
+.project-body {
+    padding: 18px 20px 20px;
+}
+
+.project-body h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.project-body p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.talks-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.talks-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.talk-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 18px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.talk-item:last-child {
+    border-bottom: none;
+}
+
+.talk-year {
+    background: #20c997;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.talk-item h5 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.talk-item p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+  </style>
 </head>
 
 <body>
@@ -521,6 +785,6 @@
   <!-- JS -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.js?v=20261108"></script>
 </body>
 </html>

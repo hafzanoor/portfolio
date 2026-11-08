@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     var typed = new Typed('#typed', {
-        strings: ["Hafza Noor", "a Freelancer", "a Data Analyst"],
+        strings: ["Hafza Noor", "a Medical AI Researcher", "a Data Scientist", "a Mathematician"],
         typeSpeed: 80,
         backSpeed: 50,
         backDelay: 1500,

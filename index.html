@@ -380,7 +380,7 @@
             <li><strong>Name:</strong> Hafza Noor</li>
             <li><strong>Email:</strong> <a href="mailto:noorhafza01@gmail.com">noorhafza01@gmail.com</a></li>
             <li><strong>From:</strong> Punjab, Pakistan</li>
-            <li><strong>Research interests:</strong> Computer vision &amp; image analysis (incl. medical imaging), trustworthy AI, optimization</li>
+            <li><strong>Research interests:</strong> Environmental data science &amp; AI for sustainability, computer vision &amp; image analysis (incl. medical imaging), trustworthy AI, optimization</li>
           </ul>
           <a href="images/Resume/resume.pdf" target="_blank" class="btn-custom mt-3">Download CV</a>
         </div>
@@ -393,10 +393,35 @@
     <div class="container">
       <div class="text-center mb-5">
         <h2>Research &amp; AI Projects</h2>
-        <p class="section-subtitle">Recent work in computer vision and trustworthy AI</p>
+        <p class="section-subtitle">Recent work in environmental data science, computer vision and trustworthy AI</p>
       </div>
 
       <div class="row g-4">
+
+        <!-- Research 0: Environmental data science -->
+        <div class="col-lg-6">
+          <div class="research-card">
+            <span class="research-tag">Completed &middot; Environmental AI</span>
+            <h4>Forecasting PM2.5 Smog in Lahore with Machine Learning and Weather Data</h4>
+            <p>
+              Four years of hourly <strong>CAMS air-quality</strong> and <strong>ERA5 weather</strong> data (2022&ndash;2026) used to
+              explain Lahore's winter smog and forecast <strong>next-day PM2.5</strong> with Random Forest and Gradient Boosting.
+            </p>
+            <div class="research-stats">
+              <div><strong>R&sup2; 0.85</strong><small>next-day forecast, held-out 2025&ndash;26</small></div>
+              <div><strong>&minus;16.5%</strong><small>error vs. persistence baseline</small></div>
+              <div><strong>99.7%</strong><small>of days above WHO guideline</small></div>
+            </div>
+            <ul class="research-list">
+              <li><strong>Strict chronological split</strong>: trained on 2022&ndash;25, tested on the full 2025&ndash;26 smog season.</li>
+              <li>Smog days are cold, calm and humid with a <strong>shallow boundary layer</strong>; tomorrow's wind is the key predictor.</li>
+            </ul>
+            <div class="chips"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Time Series</span><span>Open-Meteo API</span></div>
+            <div class="research-links">
+              <a href="https://github.com/hafzanoor/lahore-pm25-forecasting" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code &amp; report</a>
+            </div>
+          </div>
+        </div>
 
         <!-- Research 1 -->
         <div class="col-lg-6">
